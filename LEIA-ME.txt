@@ -1,0 +1,14 @@
+HOSPITAL REVIVA - LANDING PAGE
+
+Para publicar: suba a pasta inteira (index.html + img/) na hospedagem
+(Vercel, Netlify, Hostinger etc.). Não há build; é HTML estático.
+
+Antes de divulgar:
+1. Rodapé do index.html: preencher o diretor técnico médico (nome e CRM),
+   exigido pela Resolução CFM 2.336/2023 em publicidade de serviço médico.
+   Está comentado no código; procure por "CFM 2.336".
+2. Se o domínio não for hospitalreviva.com.br, troque nas tags
+   canonical, og:image e no bloco JSON-LD do <head>.
+3. Rastreamento: todo botão de WhatsApp tem data-wa="posição". Instalando o
+   Google Tag Manager ou o Pixel da Meta, os cliques já disparam os eventos
+   "whatsapp_click" (dataLayer) e "Contact" (fbq).

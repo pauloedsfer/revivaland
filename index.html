@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hospital Reviva | Clínica de Recuperação em Anápolis-GO</title>
+<meta name="description" content="Hospital Reviva em Anápolis-GO: tratamento para dependência química e alcoolismo com equipe multiprofissional 24h. Fale com a equipe pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700;800&display=swap">
+<meta name="theme-color" content="#0D4442">
+<link rel="icon" type="image/png" href="img/fenix.png">
+<link rel="canonical" href="https://hospitalreviva.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Hospital Reviva | Tratamento para dependência química em Anápolis">
+<meta property="og:description" content="Internação com acompanhamento médico e equipe multiprofissional 24h. Fale com a equipe pelo WhatsApp.">
+<meta property="og:image" content="https://hospitalreviva.com.br/img/sede-jardim.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MedicalClinic","name":"Hospital Reviva",
+ "description":"Tratamento multidisciplinar para dependência química e alcoolismo em Anápolis-GO.",
+ "url":"https://hospitalreviva.com.br/","image":"https://hospitalreviva.com.br/img/sede-jardim.jpg",
+ "telephone":["+55-62-99226-0937","+55-62-99243-3763"],
+ "address":{"@type":"PostalAddress","streetAddress":"Rua 01, Qd. 11, Chácara 16","addressLocality":"Anápolis","addressRegion":"GO","addressCountry":"BR"},
+ "openingHours":"Mo-Su 00:00-23:59","sameAs":["https://www.instagram.com/hospitalreviva/"],
+ "medicalSpecialty":"Psychiatric"}
+</script>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
+</head>
+<body>
+<style>
+/* Layout: "o caminho de volta" — hero dividido (texto + fotos da sede), faixas alternadas claro/teal,
+   passos do tratamento sobre a alameda de pedra, CTA de WhatsApp em todo bloco. */
+:root{
+  --bg:#F2F6F3; --surface:#FFFFFF; --ink:#112E2C; --muted:#4A6460; --line:#D3E1DA;
+  --teal:#0E6A69; --teal-2:#0A4C4B; --sage:#6E9F80; --sun:#E19A2F;
+  --wa:#157F40; --wa-hover:#106A35; --on-wa:#FFFFFF;
+  --band:#0D4442; --band-2:#0A3634; --on-band:#E9F3EF; --on-band-muted:#B5CFC8;
+  --shadow:0 18px 40px -22px rgba(10,60,58,.45);
+  --display:"Young Serif", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --gutter-l:max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r:max(16px, env(safe-area-inset-right, 0px));
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0C1A19; --surface:#132624; --ink:#E3EEEA; --muted:#9BB4AE; --line:#23403C;
+  --teal:#5DC0B4; --teal-2:#8BD4C9; --sage:#8DC09E; --sun:#F0B556;
+  --wa:#1B9A4E; --wa-hover:#20AD59; --on-wa:#FFFFFF;
+  --band:#0A3331; --band-2:#082826; --on-band:#E9F3EF; --on-band-muted:#A9C6BF;
+  --shadow:0 18px 40px -22px rgba(0,0,0,.7); color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#0C1A19; --surface:#132624; --ink:#E3EEEA; --muted:#9BB4AE; --line:#23403C;
+  --teal:#5DC0B4; --teal-2:#8BD4C9; --sage:#8DC09E; --sun:#F0B556;
+  --wa:#1B9A4E; --wa-hover:#20AD59; --on-wa:#FFFFFF;
+  --band:#0A3331; --band-2:#082826; --on-band:#E9F3EF; --on-band-muted:#A9C6BF;
+  --shadow:0 18px 40px -22px rgba(0,0,0,.7); color-scheme:dark }
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *{transition:none!important;animation:none!important} }
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--surface)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:var(--gutter-l);padding-right:var(--gutter-r)}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12;text-wrap:balance;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(1.9rem,3.6vw,2.8rem)}
+h3{font-size:1.28rem}
+p{margin:0}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.lead{font-size:1.12rem;color:var(--muted);max-width:60ch}
+section{padding-block:clamp(64px,9vw,112px)}
+.section-head{display:grid;gap:14px;max-width:720px;margin-bottom:clamp(32px,5vw,56px)}
+
+/* ---------- botões ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;
+  font:700 1rem/1 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s, background-color .15s, box-shadow .15s;white-space:nowrap}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-wa{background:var(--wa);color:var(--on-wa);box-shadow:0 10px 24px -12px rgba(21,127,64,.8)}
+.btn-wa:hover{background:var(--wa-hover);transform:translateY(-1px)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:var(--surface)}
+.btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
+.btn small{font-weight:500;opacity:.85;font-size:.86rem}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- topo ---------- */
+.topbar{background:var(--band-2);color:var(--on-band-muted);font-size:.85rem}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;padding-block:8px;flex-wrap:wrap}
+.topbar b{color:var(--on-band);font-weight:600}
+.topbar a{text-decoration:none}
+.topbar a:hover{color:var(--on-band)}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--surface) 92%,transparent);
+  backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{width:38px;height:auto}
+.brand span{display:grid;line-height:1}
+.brand strong{font-family:var(--display);font-weight:400;font-size:1.32rem;color:var(--teal-2);letter-spacing:.01em}
+.brand em{font-style:normal;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.nav-links{display:flex;gap:26px;font-size:.95rem;font-weight:600}
+.nav-links a{text-decoration:none;color:var(--muted)}
+.nav-links a:hover{color:var(--teal)}
+header.nav .btn{min-height:44px;padding:0 18px;font-size:.95rem}
+@media (max-width:900px){ .nav-links{display:none} }
+@media (max-width:480px){ header.nav .btn .lbl-long{display:none} .brand em{display:none} }
+
+/* ---------- hero ---------- */
+.hero{padding-block:clamp(40px,6vw,80px) clamp(56px,7vw,96px);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:900px;height:900px;right:-260px;top:-380px;border-radius:50%;
+  background:radial-gradient(circle,color-mix(in srgb,var(--sun) 22%,transparent) 0%,transparent 62%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,64px);align-items:center;position:relative}
+.hero-copy{display:grid;gap:22px;min-width:0}
+.hero h1{font-size:clamp(2.3rem,5.2vw,3.9rem)}
+.hero h1 mark{background:none;color:var(--teal);position:relative;white-space:nowrap}
+.hero h1 mark::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.14em;background:var(--sun);opacity:.55;border-radius:2px;z-index:-1}
+.trust{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.92rem;color:var(--muted);font-weight:500}
+.trust li{display:flex;align-items:center;gap:7px}
+.trust svg{width:18px;height:18px;color:var(--sage)}
+ul.clean{list-style:none;margin:0;padding:0}
+.hero-media{position:relative;min-width:0;padding-bottom:40px}
+.hero-media .main{border-radius:28px 28px 28px 120px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3.3}
+.hero-media .main img{width:100%;height:100%;object-fit:cover}
+.hero-media .inset{position:absolute;left:-28px;bottom:0;width:38%;border-radius:20px;overflow:hidden;border:6px solid var(--bg);box-shadow:var(--shadow);aspect-ratio:3/4}
+.hero-media .inset img{width:100%;height:100%;object-fit:cover}
+.hero-media .badge{position:absolute;right:18px;bottom:16px;background:var(--surface);border-radius:16px;padding:12px 16px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;max-width:250px}
+.hero-media .badge b{font-family:var(--display);font-weight:400;font-size:2rem;color:var(--teal);line-height:1}
+.hero-media .badge span{font-size:.85rem;line-height:1.3;color:var(--muted)}
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-media{max-width:620px;margin-left:auto;margin-right:auto;width:100%}
+  .hero-media .inset{left:0}
+}
+
+/* ---------- aviso nova identidade ---------- */
+.rebrand{background:var(--surface);border-block:1px solid var(--line)}
+.rebrand .wrap{display:flex;gap:16px;align-items:center;padding-block:18px;flex-wrap:wrap}
+.rebrand img{width:34px}
+.rebrand p{flex:1 1 420px;min-width:0;font-size:.98rem;color:var(--muted)}
+.rebrand p b{color:var(--ink)}
+.rebrand a{font-weight:700;color:var(--teal);text-decoration:none;white-space:nowrap}
+
+/* ---------- sinais ---------- */
+.signs .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,80px);align-items:start}
+.signs .sticky{position:sticky;top:110px;display:grid;gap:20px}
+.sign-list{display:grid;gap:14px;counter-reset:none}
+.sign{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 22px}
+.sign svg{width:26px;height:26px;color:var(--teal);margin-top:2px}
+.sign p{color:var(--ink)}
+.quote-line{font-family:var(--display);font-size:1.35rem;line-height:1.35;color:var(--teal-2);border-left:3px solid var(--sun);padding-left:18px;margin-top:6px}
+@media (max-width:900px){ .signs .wrap{grid-template-columns:1fr} .signs .sticky{position:static} }
+
+/* ---------- pilares (faixa teal) ---------- */
+.band{background:var(--band);color:var(--on-band)}
+.band .eyebrow{color:var(--sun)}
+.band .lead{color:var(--on-band-muted)}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:color-mix(in srgb,var(--on-band) 16%,transparent);border-radius:22px;overflow:hidden}
+.pillar{background:var(--band);padding:30px 28px;display:grid;gap:10px;align-content:start}
+.pillar svg{width:34px;height:34px;color:var(--sun)}
+.pillar h3{color:var(--on-band)}
+.pillar p{color:var(--on-band-muted);font-size:.98rem}
+@media (max-width:900px){ .pillars{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:560px){ .pillars{grid-template-columns:1fr} }
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:clamp(40px,6vw,64px);padding-top:32px;border-top:1px solid color-mix(in srgb,var(--on-band) 18%,transparent)}
+.stat b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2rem,4vw,2.8rem);line-height:1;color:var(--on-band)}
+.stat span{font-size:.92rem;color:var(--on-band-muted)}
+@media (max-width:560px){ .stats{grid-template-columns:1fr} }
+
+/* ---------- estrutura (galeria) ---------- */
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:220px;gap:14px}
+.ph{position:relative;margin:0;border-radius:18px;overflow:hidden;background:var(--line)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.ph:hover img{transform:scale(1.04)}
+.ph figcaption{position:absolute;inset:auto 0 0 0;padding:40px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;
+  background:linear-gradient(to top,rgba(5,25,24,.82),rgba(5,25,24,0))}
+.ph figcaption small{display:block;font-weight:400;opacity:.85;font-size:.82rem}
+.g-a{grid-column:span 2;grid-row:span 2}.g-b,.g-c{grid-row:span 2}.g-w{grid-column:span 2}
+@media (max-width:760px){
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:170px;gap:10px}
+  .g-a{grid-column:span 2;grid-row:span 2}
+}
+.struct-cta{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:28px;padding:22px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line)}
+.struct-cta p{font-weight:600;flex:1 1 300px}
+
+/* ---------- caminho / passos ---------- */
+.path{position:relative;color:var(--on-band);overflow:hidden;background:var(--band-2)}
+.path-bg{position:absolute;inset:0;background-image:url("img/alameda.jpg");background-size:cover;background-position:center 70%;opacity:.22}
+.path .wrap{position:relative}
+.path .eyebrow{color:var(--sun)}
+.path .lead{color:var(--on-band-muted)}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;list-style:none;margin:0;padding:0}
+.step{background:color-mix(in srgb,var(--band-2) 78%,transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  border:1px solid color-mix(in srgb,var(--on-band) 16%,transparent);border-radius:20px;padding:26px 24px;display:grid;gap:10px;align-content:start}
+.step-n{font-family:var(--display);font-size:1rem;color:var(--band-2);background:var(--sun);width:38px;height:38px;border-radius:50%;display:grid;place-items:center}
+.step h3{color:var(--on-band)}
+.step p{color:var(--on-band-muted);font-size:.98rem}
+@media (max-width:900px){ .steps{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:560px){ .steps{grid-template-columns:1fr} }
+.path .btn-row{margin-top:36px}
+.path .btn-ghost{background:transparent;color:var(--on-band);border-color:color-mix(in srgb,var(--on-band) 35%,transparent)}
+.path .btn-ghost:hover{border-color:var(--on-band);color:var(--on-band)}
+
+/* ---------- contato ---------- */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.contact-cards{display:grid;gap:14px;margin-top:28px}
+.ccard{display:grid;grid-template-columns:1fr auto;gap:8px 16px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px 22px}
+.ccard .who{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+.ccard .num{font-size:1.45rem;font-weight:700;letter-spacing:.01em;font-variant-numeric:tabular-nums;user-select:all}
+.ccard .acts{grid-column:1/-1;display:flex;gap:10px;flex-wrap:wrap}
+.copy{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;min-height:44px;padding:0 16px;font:600 .9rem var(--body);cursor:pointer}
+.copy:hover{color:var(--teal);border-color:var(--teal)}
+.where{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);background:var(--surface)}
+.where img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.where-info{padding:22px 24px;display:grid;gap:10px}
+.where-info p{display:flex;gap:10px;align-items:flex-start;color:var(--muted)}
+.where-info svg{width:20px;height:20px;flex:none;margin-top:3px;color:var(--teal)}
+.where-info a{color:var(--teal);font-weight:600}
+@media (max-width:900px){ .contact .wrap{grid-template-columns:1fr} }
+@media (max-width:420px){ .ccard .acts .btn{flex:1 1 100%} }
+
+/* ---------- FAQ ---------- */
+.faq .wrap{max-width:860px}
+details{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font-weight:700;font-size:1.08rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--display);font-size:1.6rem;color:var(--teal);line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details .ans{padding:0 0 22px;color:var(--muted);max-width:68ch;display:grid;gap:10px}
+
+/* ---------- CTA final ---------- */
+.final{background:linear-gradient(135deg,var(--band) 0%,var(--band-2) 100%);color:var(--on-band);text-align:left}
+.final .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,4vw,48px);align-items:center}
+.final img{width:120px}
+.final h2{color:var(--on-band)}
+.final p{color:var(--on-band-muted);margin-top:12px;max-width:56ch}
+.final .btn-row{margin-top:26px}
+.final .btn-ghost{background:transparent;color:var(--on-band);border-color:color-mix(in srgb,var(--on-band) 35%,transparent)}
+@media (max-width:640px){ .final .wrap{grid-template-columns:1fr} .final img{width:84px} }
+
+footer{background:var(--band-2);color:var(--on-band-muted);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px 32px;flex-wrap:wrap;padding-block:28px 32px}
+footer a{color:var(--on-band)}
+footer .sos{color:var(--on-band)}
+
+/* ---------- WhatsApp fixo ---------- */
+.mbar{display:none}
+@media (max-width:760px){
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:70;
+    padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));
+    background:var(--surface);border-top:1px solid var(--line);box-shadow:0 -10px 30px -18px rgba(0,0,0,.35)}
+  .mbar .btn{min-height:50px;padding:0 10px;font-size:.92rem;gap:8px}
+  .mbar .btn svg{width:20px;height:20px}
+  .fab{display:none!important}
+}
+.fab{position:fixed;right:calc(22px + env(safe-area-inset-right,0px));bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:70;display:grid;justify-items:end;gap:10px}
+.fab-btn{width:62px;height:62px;border-radius:50%;background:var(--wa);color:var(--on-wa);border:0;display:grid;place-items:center;cursor:pointer;box-shadow:0 14px 30px -10px rgba(21,127,64,.75)}
+.fab-btn svg{width:30px;height:30px}
+.fab-btn::after{content:"";position:absolute;width:62px;height:62px;border-radius:50%;border:2px solid var(--wa);animation:ring 2.4s infinite;pointer-events:none}
+@keyframes ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.55);opacity:0}}
+.fab-menu{background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:14px;display:grid;gap:8px;min-width:260px}
+.fab-menu p{font-size:.88rem;color:var(--muted);padding:0 4px 4px}
+.fab-menu .btn{justify-content:flex-start}
+.toast{position:fixed;left:50%;bottom:calc(100px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-weight:600;font-size:.92rem;z-index:80}
+</style>
+
+<!-- Ícone de conversa genérico (não é a marca do WhatsApp) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20.5 11.6a8.4 8.4 0 0 1-12.3 7.4L3.5 20.5l1.6-4.5A8.4 8.4 0 1 1 20.5 11.6Z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M9 9.2c0 3 2.4 5.6 5.6 5.8l1.2-1.4-1.9-1-1 .8a4 4 0 0 1-2.1-2.1l.8-1-1-1.9Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7.5V12l3 2"/></symbol>
+  </defs>
+</svg>
+
+<div class="topbar">
+  <div class="wrap">
+    <span><b>Atendimento 24 horas</b> · Anápolis – GO</span>
+    <a href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="topbar">WhatsApp <b>(62) 99226-0937</b> · <b>(62) 99243-3763</b></a>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Hospital Reviva, início">
+      <img src="img/fenix.png" alt="" width="38" height="44">
+      <span><strong>Hospital Reviva</strong><em>Acolher · Tratar · Transformar</em></span>
+    </a>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="#tratamento">Tratamento</a>
+      <a href="#estrutura">Estrutura</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="header">
+      <svg><use href="#i-chat"/></svg><span>Fale<span class="lbl-long"> com a equipe</span></span>
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Dependência química e alcoolismo · Anápolis – GO</p>
+        <h1>O primeiro passo para <mark>recomeçar</mark> pode ser uma conversa hoje.</h1>
+        <p class="lead">Internação com acompanhamento médico e equipe multiprofissional 24 horas, em um ambiente seguro, arborizado e acolhedor. Fale agora com a equipe do Hospital Reviva pelo WhatsApp.</p>
+        <div class="btn-row">
+          <a class="btn btn-wa" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="hero-1">
+            <svg><use href="#i-chat"/></svg> WhatsApp 1 <small>(62) 99226-0937</small>
+          </a>
+          <a class="btn btn-wa" href="https://wa.me/5562992433763?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="hero-2">
+            <svg><use href="#i-chat"/></svg> WhatsApp 2 <small>(62) 99243-3763</small>
+          </a>
+        </div>
+        <ul class="clean trust">
+          <li><svg><use href="#i-check"/></svg> Conversa sigilosa</li>
+          <li><svg><use href="#i-check"/></svg> Orientação para a família</li>
+          <li><svg><use href="#i-check"/></svg> Equipe de enfermagem 24h</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <div class="main"><img src="img/sede-jardim.jpg" alt="Sede do Hospital Reviva cercada por jardim, palmeiras e caminhos de pedra" width="1600" height="900" fetchpriority="high"></div>
+        <div class="inset"><img src="img/alameda.jpg" alt="Alameda de pedra arborizada dentro do hospital" width="900" height="1538"></div>
+        <div class="badge"><b>35</b><span>leitos em uma chácara arborizada em Anápolis</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVISO: endereço que circula com o nome antigo -->
+  <div class="rebrand">
+    <div class="wrap">
+      <img src="img/fenix.png" alt="" width="34" height="39">
+      <p><b>Conheceu este endereço como Clínica Virtude?</b> A unidade de Anápolis agora é o <b>Hospital Reviva</b>. Para atendimento aqui, use os contatos desta página.</p>
+      <a href="#contato">Ver contatos →</a>
+    </div>
+  </div>
+
+  <!-- SINAIS -->
+  <section class="signs" id="tratamento">
+    <div class="wrap">
+      <div class="sticky">
+        <p class="eyebrow">Para quem é</p>
+        <h2>Quando a família percebe que sozinha não dá mais</h2>
+        <p class="lead">A dependência química é uma doença e tem tratamento. Se algum destes pontos parece familiar, vale conversar com quem acompanha isso todos os dias.</p>
+        <p class="quote-line">Buscar ajuda não é desistir de alguém. É dar a ele uma chance real de tratamento.</p>
+      </div>
+      <div class="sign-list">
+        <div class="sign"><svg><use href="#i-check"/></svg><p>O uso de álcool, crack, cocaína ou outras drogas saiu do controle, e as promessas de parar não se cumprem.</p></div>
+        <div class="sign"><svg><use href="#i-check"/></svg><p>Trabalho, estudos, dinheiro e relacionamentos estão se perdendo aos poucos.</p></div>
+        <div class="sign"><svg><use href="#i-check"/></svg><p>Já existem riscos à saúde, brigas em casa, dívidas ou situações de perigo.</p></div>
+        <div class="sign"><svg><use href="#i-check"/></svg><p>Tentativas anteriores de parar sem acompanhamento não deram certo.</p></div>
+        <div class="sign"><svg><use href="#i-check"/></svg><p>A família está exausta e não sabe por onde começar.</p></div>
+        <div class="btn-row" style="margin-top:8px">
+          <a class="btn btn-wa" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20tratamento%20de%20um%20familiar%20no%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="sinais-1"><svg><use href="#i-chat"/></svg> Quero orientação agora</a>
+          <a class="btn btn-ghost" href="https://wa.me/5562992433763?text=Ol%C3%A1!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20tratamento%20de%20um%20familiar%20no%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="sinais-2">Falar no WhatsApp 2</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILARES -->
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Cuidar da mente é cuidar da vida</p>
+        <h2>Tratamento multidisciplinar, com estrutura hospitalar</h2>
+        <p class="lead">Cada paciente recebe um plano de cuidado próprio, conduzido por uma equipe que trabalha junta: médicos, enfermagem, farmácia e profissionais de terapia.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg>
+          <h3>Equipe médica</h3>
+          <p>Avaliação, prescrição e acompanhamento médico durante toda a internação, incluindo a fase de desintoxicação.</p>
+        </div>
+        <div class="pillar">
+          <svg><use href="#i-clock"/></svg>
+          <h3>Atendimento 24h</h3>
+          <p>Posto de enfermagem funcionando dia e noite, com observação contínua dos pacientes.</p>
+        </div>
+        <div class="pillar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4-2.5-7-6-7-10a7 7 0 0 1 14 0c0 4-3 7.5-7 10Z"/><path d="M12 21V10m0 4 3-3m-3 1-2.5-2.5"/></svg>
+          <h3>Estrutura acolhedora</h3>
+          <p>Chácara com jardins, alamedas, piscina e áreas de convivência. Quartos climatizados e espaços pensados para o descanso.</p>
+        </div>
+        <div class="pillar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M2.5 20a5.5 5.5 0 0 1 11 0M13 20a4 4 0 0 1 8 0"/></svg>
+          <h3>Terapias integrativas</h3>
+          <p>Atendimentos individuais, grupos terapêuticos no espaço coletivo e atividades que ajudam a reconstruir a rotina.</p>
+        </div>
+        <div class="pillar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m8.8 12 2.2 2.2 4.3-4.4"/></svg>
+          <h3>Ambiente seguro e humanizado</h3>
+          <p>Área monitorada e protegida, com respeito à dignidade e à história de cada pessoa, sem julgamentos.</p>
+        </div>
+        <div class="pillar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="7" rx="3.5" transform="rotate(-35 12 12.5)"/><path d="m9.2 7.6 4 5.8"/></svg>
+          <h3>Farmácia hospitalar</h3>
+          <p>Farmacêutico responsável técnico e controle rigoroso dos medicamentos, inclusive os de controle especial.</p>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>35</b><span>leitos de internação</span></div>
+        <div class="stat"><b>24h</b><span>de enfermagem, todos os dias</span></div>
+        <div class="stat"><b>55 km</b><span>de Goiânia, em Anápolis – GO</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTRUTURA -->
+  <section id="estrutura">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Conheça o espaço</p>
+        <h2>Estrutura hospitalar em meio à natureza</h2>
+        <p class="lead">Ambientes clínicos completos e muito verde ao redor. Um lugar tranquilo para atravessar o tratamento com segurança.</p>
+      </div>
+      <div class="gallery">
+        <figure class="ph g-a"><img src="img/posto-enfermagem.jpg" alt="Posto de enfermagem com leitos hospitalares" loading="lazy" width="1200" height="900"><figcaption>Posto de enfermagem<small>Observação e cuidado 24 horas</small></figcaption></figure>
+        <figure class="ph g-b"><img src="img/quarto.jpg" alt="Quarto com beliche, ar-condicionado e estante" loading="lazy" width="720" height="1280"><figcaption>Quartos climatizados</figcaption></figure>
+        <figure class="ph g-c"><img src="img/espaco-coletivo.jpg" alt="Espaço coletivo com cadeiras para grupos terapêuticos" loading="lazy" width="650" height="700"><figcaption>Espaço coletivo<small>Grupos terapêuticos</small></figcaption></figure>
+        <figure class="ph g-w"><img src="img/sala-atendimento.jpg" alt="Sala de atendimento com mesa e maca" loading="lazy" width="1200" height="900"><figcaption>Sala de atendimento</figcaption></figure>
+        <figure class="ph g-w"><img src="img/refeitorio.jpg" alt="Refeitório com mesas e cozinha" loading="lazy" width="1200" height="555"><figcaption>Refeitório</figcaption></figure>
+        <figure class="ph g-w"><img src="img/piscina.jpg" alt="Piscina cercada com espreguiçadeiras" loading="lazy" width="1200" height="553"><figcaption>Piscina e área verde</figcaption></figure>
+        <figure class="ph g-w"><img src="img/alojamentos.jpg" alt="Prédio dos quartos com jardim e caminho de pedra" loading="lazy" width="1200" height="675"><figcaption>Alojamentos</figcaption></figure>
+      </div>
+      <div class="struct-cta">
+        <p>Quer saber mais sobre a estrutura ou agendar uma visita?</p>
+        <a class="btn btn-wa" href="https://wa.me/5562992433763?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20a%20estrutura%20do%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="estrutura"><svg><use href="#i-chat"/></svg> Perguntar no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASSOS -->
+  <section class="path" id="como-funciona">
+    <div class="path-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">O caminho do tratamento</p>
+        <h2>Da primeira conversa até a alta</h2>
+        <p class="lead">Um processo claro, para o paciente e para a família saberem o que vem em cada etapa.</p>
+      </div>
+      <ol class="steps">
+        <li class="step"><span class="step-n">1</span><h3>Primeiro contato</h3><p>Você conversa com a equipe pelo WhatsApp, conta a situação e tira as dúvidas. Sem compromisso.</p></li>
+        <li class="step"><span class="step-n">2</span><h3>Avaliação e admissão</h3><p>O paciente é avaliado e a equipe define o plano de tratamento mais adequado para o caso.</p></li>
+        <li class="step"><span class="step-n">3</span><h3>Desintoxicação acompanhada</h3><p>Na fase inicial, médicos e enfermagem acompanham de perto para que a abstinência seja atravessada com segurança.</p></li>
+        <li class="step"><span class="step-n">4</span><h3>Tratamento multiprofissional</h3><p>Atendimentos individuais, grupos terapêuticos, atividades e uma rotina estruturada, dia após dia.</p></li>
+        <li class="step"><span class="step-n">5</span><h3>Família junto</h3><p>Os familiares recebem orientação para entender a dependência e apoiar a recuperação.</p></li>
+        <li class="step"><span class="step-n">6</span><h3>Alta planejada</h3><p>Preparação para a volta à rotina, com orientações para reduzir o risco de recaída.</p></li>
+      </ol>
+      <div class="btn-row">
+        <a class="btn btn-wa" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Quero%20dar%20o%20primeiro%20passo%20e%20saber%20como%20funciona%20a%20interna%C3%A7%C3%A3o%20no%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="passos-1"><svg><use href="#i-chat"/></svg> Dar o primeiro passo · WhatsApp 1</a>
+        <a class="btn btn-ghost" href="https://wa.me/5562992433763?text=Ol%C3%A1!%20Quero%20dar%20o%20primeiro%20passo%20e%20saber%20como%20funciona%20a%20interna%C3%A7%C3%A3o%20no%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="passos-2">WhatsApp 2</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Fale com a equipe</p>
+        <h2 style="margin-top:12px">Escolha um dos números e chame no WhatsApp</h2>
+        <p class="lead" style="margin-top:14px">Os dois números atendem a mesma unidade. Se um estiver ocupado, use o outro.</p>
+        <div class="contact-cards">
+          <div class="ccard">
+            <span class="who">Atendimento 1</span><span></span>
+            <span class="num" id="num1">(62) 99226-0937</span><span></span>
+            <div class="acts">
+              <a class="btn btn-wa" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="contato-1"><svg><use href="#i-chat"/></svg> Abrir WhatsApp</a>
+              <button class="copy" type="button" id="copy1" data-copy="62992260937">Copiar número</button>
+            </div>
+          </div>
+          <div class="ccard">
+            <span class="who">Atendimento 2</span><span></span>
+            <span class="num" id="num2">(62) 99243-3763</span><span></span>
+            <div class="acts">
+              <a class="btn btn-wa" href="https://wa.me/5562992433763?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="contato-2"><svg><use href="#i-chat"/></svg> Abrir WhatsApp</a>
+              <button class="copy" type="button" id="copy2" data-copy="62992433763">Copiar número</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="where">
+        <img src="img/fachada.jpg" alt="Fachada do Hospital Reviva com muro verde e placa" loading="lazy" width="1400" height="788">
+        <div class="where-info">
+          <p><svg><use href="#i-pin"/></svg><span>Rua 01, Qd. 11, Chácara 16<br>Anápolis – GO</span></p>
+          <p><svg><use href="#i-insta"/></svg><a href="https://www.instagram.com/hospitalreviva/" target="_blank" rel="noopener">@hospitalreviva no Instagram</a></p>
+          <p><svg><use href="#i-clock"/></svg><span>Atendimento 24 horas</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="duvidas" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2>O que as famílias mais perguntam</h2>
+      </div>
+      <details open>
+        <summary>Como faço para internar um familiar?</summary>
+        <div class="ans"><p>Comece pelo WhatsApp. A equipe escuta a situação, explica como funciona a admissão e quais documentos são necessários, e agenda a avaliação.</p></div>
+      </details>
+      <details>
+        <summary>A internação pode ser feita sem a vontade do paciente?</summary>
+        <div class="ans"><p>A legislação brasileira (Lei 10.216/2001 e Lei 11.343/2006, alterada pela Lei 13.840/2019) prevê a internação voluntária e a involuntária. A involuntária é solicitada pela família ou responsável legal e depende de avaliação e indicação médica.</p><p>Cada caso é avaliado individualmente. Fale com a equipe para receber orientação sobre a sua situação.</p></div>
+      </details>
+      <details>
+        <summary>Quanto tempo dura o tratamento?</summary>
+        <div class="ans"><p>Depende da avaliação inicial e da evolução de cada paciente. A equipe define o tempo de internação e revisa o plano ao longo do tratamento.</p></div>
+      </details>
+      <details>
+        <summary>A família participa? Pode visitar?</summary>
+        <div class="ans"><p>A participação da família faz parte do tratamento. Os dias e as regras de visita são informados na admissão, de acordo com a fase do tratamento.</p></div>
+      </details>
+      <details>
+        <summary>Vocês atendem por plano de saúde?</summary>
+        <div class="ans"><p>Informe seu plano de saúde no WhatsApp e a equipe explica as opções de atendimento e de pagamento disponíveis.</p></div>
+      </details>
+      <details>
+        <summary>O atendimento é sigiloso?</summary>
+        <div class="ans"><p>Sim. As informações de pacientes e familiares são tratadas com sigilo profissional, desde a primeira conversa.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <img src="img/fenix.png" alt="" width="120" height="138">
+      <div>
+        <h2>Recomeçar é possível. A gente caminha junto.</h2>
+        <p>Se você ou alguém que você ama enfrenta a dependência química ou o alcoolismo, fale com a equipe do Hospital Reviva agora.</p>
+        <div class="btn-row">
+          <a class="btn btn-wa" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="final-1"><svg><use href="#i-chat"/></svg> WhatsApp 1 · (62) 99226-0937</a>
+          <a class="btn btn-wa" href="https://wa.me/5562992433763?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="final-2"><svg><use href="#i-chat"/></svg> WhatsApp 2 · (62) 99243-3763</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Hospital Reviva · Acolher · Tratar · Transformar</span>
+    <!-- CFM 2.336/2023: anúncio de serviço médico deve trazer o diretor técnico médico. Preencher antes de divulgar:
+         <span>Diretor técnico: Dr(a). NOME · CRM-GO 00000</span> -->
+    <span class="sos">Emergência médica: ligue 192 (SAMU)</span>
+    <a href="https://www.instagram.com/hospitalreviva/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<!-- Celular: barra fixa com os dois números, sempre a um toque -->
+<nav class="mbar" aria-label="WhatsApp">
+  <a class="btn btn-wa" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="barra-1"><svg><use href="#i-chat"/></svg> WhatsApp 1</a>
+  <a class="btn btn-wa" href="https://wa.me/5562992433763?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="barra-2"><svg><use href="#i-chat"/></svg> WhatsApp 2</a>
+</nav>
+
+<!-- Desktop: botão flutuante que abre a escolha entre os dois números -->
+<div class="fab">
+  <div class="fab-menu" id="fabMenu" hidden>
+    <p>Fale com a equipe do Hospital Reviva</p>
+    <a class="btn btn-wa" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="flutuante-1"><svg><use href="#i-chat"/></svg> (62) 99226-0937</a>
+    <a class="btn btn-wa" href="https://wa.me/5562992433763?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="flutuante-2"><svg><use href="#i-chat"/></svg> (62) 99243-3763</a>
+  </div>
+  <button class="fab-btn" id="fabBtn" type="button" aria-expanded="false" aria-controls="fabMenu" aria-label="Abrir contatos de WhatsApp"><svg><use href="#i-chat"/></svg></button>
+</div>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(function(){
+  var fabBtn=document.getElementById('fabBtn'), fabMenu=document.getElementById('fabMenu');
+  fabBtn.addEventListener('click',function(){
+    var open=fabMenu.hidden; fabMenu.hidden=!open; fabBtn.setAttribute('aria-expanded',String(open));
+  });
+  document.addEventListener('click',function(e){
+    if(!fabMenu.hidden && !e.target.closest('.fab')){fabMenu.hidden=true;fabBtn.setAttribute('aria-expanded','false');}
+  });
+
+  // Cada botão tem data-wa com sua posição: se o Google Tag Manager ou o Pixel da Meta forem
+  // instalados depois, dá para medir quais pontos da página geram mais conversas.
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var pos=a.getAttribute('data-wa');
+      try{ (window.dataLayer=window.dataLayer||[]).push({event:'whatsapp_click',posicao:pos}); }catch(_){}
+      try{ if(window.fbq) window.fbq('track','Contact',{posicao:pos}); }catch(_){}
+    });
+  });
+
+  var toast=document.getElementById('toast'), t;
+  function show(msg){toast.textContent=msg;toast.hidden=false;clearTimeout(t);t=setTimeout(function(){toast.hidden=true},2200);}
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var v=b.getAttribute('data-copy');
+      var sel=function(){var n=b.closest('.ccard').querySelector('.num');var r=document.createRange();r.selectNodeContents(n);var s=getSelection();s.removeAllRanges();s.addRange(r);show('Número selecionado. Use Ctrl+C para copiar.');};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(function(){show('Número copiado');},sel);}else sel();
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
