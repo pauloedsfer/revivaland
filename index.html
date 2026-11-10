@@ -4,12 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Hospital Reviva | Clínica de Recuperação em Anápolis-GO</title>
-<meta name="description" content="Hospital Reviva em Anápolis-GO: tratamento para álcool, outras drogas e dependências comportamentais, com psiquiatra, clínico e equipe multiprofissional 24h. Fale pelo WhatsApp.">
+<meta name="description" content="Hospital Reviva em Anápolis-GO: internação e consultas de psiquiatria e psicologia para álcool, outras drogas e dependências comportamentais. Equipe multiprofissional 24h. Fale pelo WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700;800&display=swap">
 <meta name="theme-color" content="#0D4442">
-<link rel="icon" type="image/png" href="img/fenix.png">
+<link rel="icon" href="img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="canonical" href="https://hospitalreviva.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -132,6 +134,36 @@ ul.clean{list-style:none;margin:0;padding:0}
 .rebrand p{flex:1 1 420px;min-width:0;font-size:.98rem;color:var(--muted)}
 .rebrand p b{color:var(--ink)}
 .rebrand a{font-weight:700;color:var(--teal);text-decoration:none;white-space:nowrap}
+
+/* ---------- contato rápido ---------- */
+.quick{padding-block:clamp(36px,5vw,56px) 0}
+.quick-card{background:var(--surface);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:clamp(22px,3vw,32px);
+  display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:clamp(18px,3vw,40px);align-items:center}
+.quick-card h2{font-size:clamp(1.45rem,2.4vw,1.9rem)}
+.quick-card .hint{color:var(--muted);font-size:.95rem;margin-top:8px}
+.qf{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.qf label{display:grid;gap:6px;font-size:.85rem;font-weight:700;color:var(--muted);min-width:0}
+.qf label span em{font-style:normal;font-weight:500}
+.qf input,.qf select{width:100%;min-height:48px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:500 1rem var(--body);padding:0 14px}
+.qf input:focus,.qf select:focus{outline:2px solid var(--teal);outline-offset:1px}
+.qf-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px}
+.qf-actions a.alt{color:var(--teal);font-weight:700;font-size:.95rem}
+.qf-actions small{flex:1 1 100%;color:var(--muted);font-size:.85rem}
+@media (max-width:900px){ .quick-card{grid-template-columns:1fr} }
+@media (max-width:640px){ .qf{grid-template-columns:1fr} .qf-actions .btn{flex:1 1 100%} }
+
+/* ---------- serviços ---------- */
+.services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px 22px;display:grid;gap:10px;grid-template-rows:auto auto 1fr auto}
+.svc .kind{font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sage)}
+.svc h3{font-size:1.3rem}
+.svc p{color:var(--muted);font-size:.97rem}
+.svc a{font-weight:700;color:var(--teal);text-decoration:none}
+.svc a:hover{text-decoration:underline}
+.svc.main{background:var(--band);border-color:var(--band)}
+.svc.main h3{color:var(--on-band)}.svc.main p{color:var(--on-band-muted)}.svc.main .kind,.svc.main a{color:var(--sun)}
+@media (max-width:1000px){ .services{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:560px){ .services{grid-template-columns:1fr} }
 
 /* ---------- sinais ---------- */
 .signs .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,80px);align-items:start}
@@ -293,11 +325,11 @@ footer .sos{color:var(--on-band)}
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="Hospital Reviva, início">
-      <img src="img/fenix.png" alt="" width="38" height="44">
+      <img src="img/fenix.png" alt="" width="38" height="48">
       <span><strong>Hospital Reviva</strong><em>Acolher · Tratar · Transformar</em></span>
     </a>
     <nav class="nav-links" aria-label="Seções">
-      <a href="#tratamento">Tratamento</a>
+      <a href="#servicos">Serviços</a>
       <a href="#estrutura">Estrutura</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#orientacao">Blog</a>
@@ -343,11 +375,43 @@ footer .sos{color:var(--on-band)}
   <!-- AVISO: endereço que circula com o nome antigo -->
   <div class="rebrand">
     <div class="wrap">
-      <img src="img/fenix.png" alt="" width="34" height="39">
+      <img src="img/fenix.png" alt="" width="34" height="43">
       <p><b>Conheceu este endereço como Clínica Virtude?</b> A unidade de Anápolis agora é o <b>Hospital Reviva</b>. Para atendimento aqui, use os contatos desta página.</p>
       <a href="#contato">Ver contatos →</a>
     </div>
   </div>
+
+  <!-- CONTATO RÁPIDO: os campos só enriquecem a mensagem; o link do WhatsApp funciona mesmo vazio (e sem JavaScript) -->
+  <section class="quick" id="contato-rapido">
+    <div class="wrap">
+      <div class="quick-card">
+        <div>
+          <p class="eyebrow">Contato rápido</p>
+          <h2>Conte o que você procura e siga para o WhatsApp</h2>
+          <p class="hint">Preencher é opcional. Os dados não ficam salvos no site: vão apenas na mensagem para a nossa equipe.</p>
+        </div>
+        <div class="qf">
+          <label for="qf-nome"><span>Nome <em>(opcional)</em></span><input id="qf-nome" type="text" autocomplete="name" placeholder="Como podemos chamar você"></label>
+          <label for="qf-tel"><span>Telefone <em>(opcional)</em></span><input id="qf-tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="(62) 9 0000-0000"></label>
+          <label for="qf-int"><span>Interesse</span>
+            <select id="qf-int">
+              <option value="">Selecione</option>
+              <option>Internação</option>
+              <option>Consulta de psiquiatria</option>
+              <option>Psicologia</option>
+              <option>Avaliação inicial</option>
+              <option>Orientação para a família</option>
+              <option>Outro assunto</option>
+            </select>
+          </label>
+          <div class="qf-actions">
+            <a class="btn btn-wa" id="qf-go1" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" data-wa="form-1"><svg><use href="#i-chat"/></svg> Continuar no WhatsApp</a>
+            <a class="alt" id="qf-go2" href="https://wa.me/5562992433763?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" data-wa="form-2">ou use o WhatsApp 2 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- SINAIS -->
   <section class="signs" id="tratamento">
@@ -367,6 +431,43 @@ footer .sos{color:var(--on-band)}
         <div class="btn-row" style="margin-top:8px">
           <a class="btn btn-wa" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20tratamento%20de%20um%20familiar%20no%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="sinais-1"><svg><use href="#i-chat"/></svg> Quero orientação agora</a>
           <a class="btn btn-ghost" href="https://wa.me/5562992433763?text=Ol%C3%A1!%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20sobre%20o%20tratamento%20de%20um%20familiar%20no%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="sinais-2">Falar no WhatsApp 2</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS: internação e atendimento ambulatorial (previstos no CNPJ) -->
+  <section id="servicos" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Serviços</p>
+        <h2>Da consulta à internação, no mesmo lugar</h2>
+        <p class="lead">Nem todo caso precisa de internação. A equipe avalia cada situação e indica o cuidado adequado, em consultório ou com o paciente internado.</p>
+      </div>
+      <div class="services">
+        <div class="svc main">
+          <span class="kind">Internação</span>
+          <h3>Internação</h3>
+          <p>Desintoxicação acompanhada e tratamento multiprofissional 24 horas, para álcool, outras drogas e dependências comportamentais.</p>
+          <a href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20interna%C3%A7%C3%A3o%20no%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="servico-internacao">Saber sobre internação →</a>
+        </div>
+        <div class="svc">
+          <span class="kind">Ambulatorial</span>
+          <h3>Consulta de psiquiatria</h3>
+          <p>Avaliação e acompanhamento psiquiátrico em consultório, para dependências e outras questões de saúde mental.</p>
+          <a href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20psiquiatria%20no%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="servico-psiquiatria">Agendar consulta →</a>
+        </div>
+        <div class="svc">
+          <span class="kind">Ambulatorial</span>
+          <h3>Psicologia</h3>
+          <p>Acompanhamento psicológico individual, com escuta qualificada e atenção à história de cada pessoa.</p>
+          <a href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20atendimento%20de%20psicologia%20no%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="servico-psicologia">Agendar atendimento →</a>
+        </div>
+        <div class="svc">
+          <span class="kind">Ambulatorial</span>
+          <h3>Avaliação inicial</h3>
+          <p>Uma consulta para entender a situação, tirar dúvidas da família e definir os próximos passos com a equipe.</p>
+          <a href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20inicial%20no%20Hospital%20Reviva." target="_blank" rel="noopener" data-wa="servico-avaliacao">Agendar avaliação →</a>
         </div>
       </div>
     </div>
@@ -537,6 +638,10 @@ footer .sos{color:var(--on-band)}
         <div class="ans"><p>Comece pelo WhatsApp. A equipe escuta a situação, explica como funciona a admissão e quais documentos são necessários, e agenda a avaliação.</p></div>
       </details>
       <details>
+        <summary>Vocês atendem em consultório, sem internação?</summary>
+        <div class="ans"><p>Sim. O Hospital Reviva oferece consultas de psiquiatria, atendimento de psicologia e avaliação inicial em consultório. Agende pelo WhatsApp.</p></div>
+      </details>
+      <details>
         <summary>A internação pode ser feita sem a vontade do paciente?</summary>
         <div class="ans"><p>A legislação brasileira (Lei 10.216/2001 e Lei 11.343/2006, alterada pela Lei 13.840/2019) prevê a internação voluntária e a involuntária. A involuntária é solicitada pela família ou responsável legal e depende de avaliação e indicação médica.</p><p>Cada caso é avaliado individualmente. Fale com a equipe para receber orientação sobre a sua situação.</p></div>
       </details>
@@ -562,7 +667,7 @@ footer .sos{color:var(--on-band)}
   <!-- CTA FINAL -->
   <section class="final">
     <div class="wrap">
-      <img src="img/fenix.png" alt="" width="120" height="138">
+      <img src="img/fenix.png" alt="" width="120" height="152">
       <div>
         <h2>Recomeçar é possível. A gente caminha junto.</h2>
         <p>Se você ou alguém que você ama enfrenta a dependência química ou o alcoolismo, fale com a equipe do Hospital Reviva agora.</p>
@@ -623,6 +728,20 @@ footer .sos{color:var(--on-band)}
       try{ if(window.fbq) window.fbq('track','Contact',{posicao:pos}); }catch(_){}
     });
   });
+
+  // Contato rápido: os campos só complementam a mensagem. Os links já têm um texto padrão,
+  // então quem clica sem preencher (ou sem JavaScript) chega ao WhatsApp do mesmo jeito.
+  var qf={nome:document.getElementById('qf-nome'),tel:document.getElementById('qf-tel'),int:document.getElementById('qf-int')};
+  var qfLinks=[['qf-go1','5562992260937'],['qf-go2','5562992433763']];
+  function qfUpdate(){
+    var nome=qf.nome.value.trim(), tel=qf.tel.value.trim(), int=qf.int.value;
+    var msg='Olá! Vim pelo site do Hospital Reviva.';
+    if(nome) msg+=' Meu nome é '+nome+'.';
+    msg+= int ? ' Tenho interesse em: '+int+'.' : ' Gostaria de informações.';
+    if(tel) msg+=' Meu telefone para contato: '+tel+'.';
+    qfLinks.forEach(function(l){document.getElementById(l[0]).href='https://wa.me/'+l[1]+'?text='+encodeURIComponent(msg);});
+  }
+  ['input','change'].forEach(function(ev){Object.keys(qf).forEach(function(k){qf[k].addEventListener(ev,qfUpdate);});});
 
   var toast=document.getElementById('toast'), t;
   function show(msg){toast.textContent=msg;toast.hidden=false;clearTimeout(t);t=setTimeout(function(){toast.hidden=true},2200);}
