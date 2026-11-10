@@ -1,14 +1,18 @@
-HOSPITAL REVIVA - LANDING PAGE
+HOSPITAL REVIVA - LANDING PAGE + BLOG
 
-Para publicar: suba a pasta inteira (index.html + img/) na hospedagem
-(Vercel, Netlify, Hostinger etc.). Não há build; é HTML estático.
+Publicar: suba a pasta inteira (index.html, blog/, img/, sitemap.xml, robots.txt)
+na hospedagem (ex.: Cloudflare Pages, "Upload assets"). HTML estático, sem build.
 
 Antes de divulgar:
-1. Rodapé do index.html: preencher o diretor técnico médico (nome e CRM),
-   exigido pela Resolução CFM 2.336/2023 em publicidade de serviço médico.
-   Está comentado no código; procure por "CFM 2.336".
-2. Se o domínio não for hospitalreviva.com.br, troque nas tags
-   canonical, og:image e no bloco JSON-LD do <head>.
-3. Rastreamento: todo botão de WhatsApp tem data-wa="posição". Instalando o
-   Google Tag Manager ou o Pixel da Meta, os cliques já disparam os eventos
-   "whatsapp_click" (dataLayer) e "Contact" (fbq).
+1. Confira no rodapé os dados da responsável técnica médica
+   (Dra. Virgínia Amorim, CRM-GO 17926, RQE 11844).
+2. Peça a um médico da equipe para revisar os 3 artigos do blog.
+3. Se o domínio não for hospitalreviva.com.br, troque o endereço nas tags
+   canonical/og:image, no JSON-LD, no sitemap.xml e no robots.txt.
+4. Depois de publicar, cadastre o site no Google Search Console e envie o
+   sitemap.xml para o Google encontrar as páginas mais rápido.
+5. Cliques nos botões de WhatsApp disparam "whatsapp_click" (dataLayer) e
+   "Contact" (Pixel da Meta) se essas ferramentas forem instaladas.
+
+Novo artigo: copie um dos arquivos em blog/, troque título, descrição e texto,
+adicione um card em blog/index.html e uma linha <url> no sitemap.xml.

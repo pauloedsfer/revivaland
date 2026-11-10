@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Hospital Reviva | Clínica de Recuperação em Anápolis-GO</title>
-<meta name="description" content="Hospital Reviva em Anápolis-GO: tratamento para dependência química e alcoolismo com equipe multiprofissional 24h. Fale com a equipe pelo WhatsApp.">
+<meta name="description" content="Hospital Reviva em Anápolis-GO: tratamento para álcool, outras drogas e dependências comportamentais, com psiquiatra, clínico e equipe multiprofissional 24h. Fale pelo WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700;800&display=swap">
@@ -16,15 +16,7 @@
 <meta property="og:title" content="Hospital Reviva | Tratamento para dependência química em Anápolis">
 <meta property="og:description" content="Internação com acompanhamento médico e equipe multiprofissional 24h. Fale com a equipe pelo WhatsApp.">
 <meta property="og:image" content="https://hospitalreviva.com.br/img/sede-jardim.jpg">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"MedicalClinic","name":"Hospital Reviva",
- "description":"Tratamento multidisciplinar para dependência química e alcoolismo em Anápolis-GO.",
- "url":"https://hospitalreviva.com.br/","image":"https://hospitalreviva.com.br/img/sede-jardim.jpg",
- "telephone":["+55-62-99226-0937","+55-62-99243-3763"],
- "address":{"@type":"PostalAddress","streetAddress":"Rua 01, Qd. 11, Chácara 16","addressLocality":"Anápolis","addressRegion":"GO","addressCountry":"BR"},
- "openingHours":"Mo-Su 00:00-23:59","sameAs":["https://www.instagram.com/hospitalreviva/"],
- "medicalSpecialty":"Psychiatric"}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "MedicalClinic", "name": "Hospital Reviva", "legalName": "Clínica Reviva Ltda", "taxID": "65.202.027/0001-02", "description": "Tratamento multidisciplinar para dependência química e alcoolismo em Anápolis-GO.", "url": "https://hospitalreviva.com.br/", "image": "https://hospitalreviva.com.br/img/sede-jardim.jpg", "telephone": ["+55-62-99226-0937", "+55-62-99243-3763"], "address": {"@type": "PostalAddress", "streetAddress": "Rua 01, Qd. 11, Chácara 16, Recreio Americano do Brasil", "postalCode": "75073-040", "addressLocality": "Anápolis", "addressRegion": "GO", "addressCountry": "BR"}, "openingHours": "Mo-Su 00:00-23:59", "sameAs": ["https://www.instagram.com/hospitalreviva/"]}</script>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}</style>
 </head>
 <body>
@@ -155,6 +147,8 @@ ul.clean{list-style:none;margin:0;padding:0}
 .band{background:var(--band);color:var(--on-band)}
 .band .eyebrow{color:var(--sun)}
 .band .lead{color:var(--on-band-muted)}
+.team{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.team li{border:1px solid color-mix(in srgb,var(--on-band) 30%,transparent);color:var(--on-band);border-radius:999px;padding:6px 14px;font-size:.92rem;font-weight:600}
 .pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:color-mix(in srgb,var(--on-band) 16%,transparent);border-radius:22px;overflow:hidden}
 .pillar{background:var(--band);padding:30px 28px;display:grid;gap:10px;align-content:start}
 .pillar svg{width:34px;height:34px;color:var(--sun)}
@@ -218,6 +212,19 @@ ul.clean{list-style:none;margin:0;padding:0}
 .where-info a{color:var(--teal);font-weight:600}
 @media (max-width:900px){ .contact .wrap{grid-template-columns:1fr} }
 @media (max-width:420px){ .ccard .acts .btn{flex:1 1 100%} }
+
+/* ---------- blog na landing ---------- */
+.reads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.read{display:grid;grid-template-rows:auto 1fr;background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,border-color .2s}
+.read:hover{transform:translateY(-3px);border-color:var(--teal)}
+.read img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.read div{padding:18px 20px 22px;display:grid;gap:8px;align-content:start}
+.read .tag{font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+.read h3{font-size:1.2rem}
+.read p{color:var(--muted);font-size:.95rem;line-height:1.5}
+.reads-foot{margin-top:24px}
+@media (max-width:900px){ .reads{grid-template-columns:1fr 1fr} }
+@media (max-width:600px){ .reads{grid-template-columns:1fr} }
 
 /* ---------- FAQ ---------- */
 .faq .wrap{max-width:860px}
@@ -293,6 +300,7 @@ footer .sos{color:var(--on-band)}
       <a href="#tratamento">Tratamento</a>
       <a href="#estrutura">Estrutura</a>
       <a href="#como-funciona">Como funciona</a>
+      <a href="#orientacao">Blog</a>
       <a href="#duvidas">Dúvidas</a>
       <a href="#contato">Contato</a>
     </nav>
@@ -307,9 +315,9 @@ footer .sos{color:var(--on-band)}
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <p class="eyebrow">Dependência química e alcoolismo · Anápolis – GO</p>
+        <p class="eyebrow">Dependências e saúde mental · Anápolis – GO</p>
         <h1>O primeiro passo para <mark>recomeçar</mark> pode ser uma conversa hoje.</h1>
-        <p class="lead">Internação com acompanhamento médico e equipe multiprofissional 24 horas, em um ambiente seguro, arborizado e acolhedor. Fale agora com a equipe do Hospital Reviva pelo WhatsApp.</p>
+        <p class="lead">Tratamento para álcool, outras drogas e dependências comportamentais, com psiquiatra, clínico e equipe multiprofissional 24 horas, em um ambiente seguro, arborizado e acolhedor. Fale agora com a equipe do Hospital Reviva pelo WhatsApp.</p>
         <div class="btn-row">
           <a class="btn btn-wa" href="https://wa.me/5562992260937?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Hospital%20Reviva%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20tratamento." target="_blank" rel="noopener" data-wa="hero-1">
             <svg><use href="#i-chat"/></svg> WhatsApp 1 <small>(62) 99226-0937</small>
@@ -370,13 +378,16 @@ footer .sos{color:var(--on-band)}
       <div class="section-head">
         <p class="eyebrow">Cuidar da mente é cuidar da vida</p>
         <h2>Tratamento multidisciplinar, com estrutura hospitalar</h2>
-        <p class="lead">Cada paciente recebe um plano de cuidado próprio, conduzido por uma equipe que trabalha junta: médicos, enfermagem, farmácia e profissionais de terapia.</p>
+        <p class="lead">Cada paciente recebe um plano de cuidado próprio, conduzido por uma equipe que trabalha junta, do consultório ao pátio.</p>
+        <ul class="clean team" aria-label="Equipe">
+          <li>Psiquiatria</li><li>Clínica médica</li><li>Enfermagem 24h</li><li>Psicologia</li><li>Nutrição</li><li>Farmácia hospitalar</li><li>Monitores de pátio</li>
+        </ul>
       </div>
       <div class="pillars">
         <div class="pillar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a4 4 0 0 0 8 0V3"/><path d="M10 13v2a5 5 0 0 0 10 0v-2"/><circle cx="20" cy="11" r="2"/></svg>
           <h3>Equipe médica</h3>
-          <p>Avaliação, prescrição e acompanhamento médico durante toda a internação, incluindo a fase de desintoxicação.</p>
+          <p>Psiquiatra e médico clínico avaliam, prescrevem e acompanham o paciente durante toda a internação, inclusive na desintoxicação.</p>
         </div>
         <div class="pillar">
           <svg><use href="#i-clock"/></svg>
@@ -391,7 +402,7 @@ footer .sos{color:var(--on-band)}
         <div class="pillar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M2.5 20a5.5 5.5 0 0 1 11 0M13 20a4 4 0 0 1 8 0"/></svg>
           <h3>Terapias integrativas</h3>
-          <p>Atendimentos individuais, grupos terapêuticos no espaço coletivo e atividades que ajudam a reconstruir a rotina.</p>
+          <p>Psicoterapia individual, grupos terapêuticos no espaço coletivo, acompanhamento nutricional e uma rotina de atividades conduzida pelos monitores.</p>
         </div>
         <div class="pillar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.2 7.5 9.5 4.3-1.3 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m8.8 12 2.2 2.2 4.3-4.4"/></svg>
@@ -401,7 +412,7 @@ footer .sos{color:var(--on-band)}
         <div class="pillar">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="9" width="18" height="7" rx="3.5" transform="rotate(-35 12 12.5)"/><path d="m9.2 7.6 4 5.8"/></svg>
           <h3>Farmácia hospitalar</h3>
-          <p>Farmacêutico responsável técnico e controle rigoroso dos medicamentos, inclusive os de controle especial.</p>
+          <p>Farmacêutico responsável técnico no próprio hospital, com separação, dispensação e controle dos medicamentos, inclusive os de controle especial.</p>
         </div>
       </div>
       <div class="stats">
@@ -489,7 +500,7 @@ footer .sos{color:var(--on-band)}
       <div class="where">
         <img src="img/fachada.jpg" alt="Fachada do Hospital Reviva com muro verde e placa" loading="lazy" width="1400" height="788">
         <div class="where-info">
-          <p><svg><use href="#i-pin"/></svg><span>Rua 01, Qd. 11, Chácara 16<br>Anápolis – GO</span></p>
+          <p><svg><use href="#i-pin"/></svg><span>Rua 01, Qd. 11, Chácara 16, Recreio Americano do Brasil<br>Anápolis – GO · CEP 75073-040</span></p>
           <p><svg><use href="#i-insta"/></svg><a href="https://www.instagram.com/hospitalreviva/" target="_blank" rel="noopener">@hospitalreviva no Instagram</a></p>
           <p><svg><use href="#i-clock"/></svg><span>Atendimento 24 horas</span></p>
         </div>
@@ -497,8 +508,25 @@ footer .sos{color:var(--on-band)}
     </div>
   </section>
 
+  <!-- BLOG: conteúdo informativo, que é o que o Google permite trabalhar de forma orgânica neste tema -->
+  <section id="orientacao" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Orientação para famílias</p>
+        <h2>Entenda a doença e o tratamento</h2>
+        <p class="lead">Artigos com base em fontes de saúde e na lei, para quem está começando a buscar ajuda.</p>
+      </div>
+      <div class="reads">
+        <a class="read" href="blog/sinais-de-dependencia-quimica.html"><img src="img/alameda.jpg" alt="" loading="lazy" width="900" height="1538"><div><span class="tag">Para famílias</span><h3>Sinais de que um familiar precisa de ajuda com álcool ou drogas</h3><p>O que os profissionais observam e como a família pode agir.</p></div></a>
+        <a class="read" href="blog/internacao-involuntaria-o-que-diz-a-lei.html"><img src="img/sala-atendimento.jpg" alt="" loading="lazy" width="1200" height="900"><div><span class="tag">Direitos e lei</span><h3>Internação involuntária: o que diz a lei e como funciona</h3><p>Quem pode pedir, quem autoriza e quanto tempo dura.</p></div></a>
+        <a class="read" href="blog/abstinencia-alcoolica-acompanhamento-medico.html"><img src="img/posto-enfermagem.jpg" alt="" loading="lazy" width="1200" height="900"><div><span class="tag">Álcool</span><h3>Abstinência alcoólica: por que parar de beber precisa de acompanhamento médico</h3><p>Sintomas de alerta e quando a desintoxicação deve ser no hospital.</p></div></a>
+      </div>
+      <div class="reads-foot"><a class="btn btn-ghost" href="blog/index.html">Ver todos os artigos</a></div>
+    </div>
+  </section>
+
   <!-- FAQ -->
-  <section class="faq" id="duvidas" style="padding-top:0">
+  <section class="faq" id="duvidas">
     <div class="wrap">
       <div class="section-head">
         <p class="eyebrow">Dúvidas frequentes</p>
@@ -549,10 +577,11 @@ footer .sos{color:var(--on-band)}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Hospital Reviva · Acolher · Tratar · Transformar</span>
-    <!-- CFM 2.336/2023: anúncio de serviço médico deve trazer o diretor técnico médico. Preencher antes de divulgar:
-         <span>Diretor técnico: Dr(a). NOME · CRM-GO 00000</span> -->
+    <span>© 2026 Hospital Reviva · Clínica Reviva Ltda · CNPJ 65.202.027/0001-02</span>
+    <!-- CFM 2.336/2023: anúncio de serviço médico traz o responsável técnico médico com CRM e RQE -->
+    <span>Responsável técnica médica: Dra. Virgínia Amorim · CRM-GO 17926 · RQE 11844</span>
     <span class="sos">Emergência médica: ligue 192 (SAMU)</span>
+    <a href="blog/index.html">Blog</a>
     <a href="https://www.instagram.com/hospitalreviva/" target="_blank" rel="noopener">Instagram</a>
   </div>
 </footer>
